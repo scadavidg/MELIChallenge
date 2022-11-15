@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MELIChallenge</string>
+    <string name="error_default">
+        Unable to complete the action, please try again later or contact support.
+    </string>
+    <string name="error_corrupted_data">
+        We have a problem getting this information, please try again later.
+    </string>
 </resources>
