@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Radius  -->
+    <dimen name="radius_10">10dp</dimen>
+
+    <!-- SearchBox -->
+    <dimen name="search_box_height">50dp</dimen>
+    <dimen name="search_box_icon_back">24dp</dimen>
+    <dimen name="search_box_icon">40dp</dimen>
+    <dimen name="search_box_title_icon">40dp</dimen>
+    <dimen name="search_box_magnifier">20dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+
+    <!-- height Width -->
+    <dimen name="height_width_0">0dp</dimen>
+</resources>

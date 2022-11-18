@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clSearchBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_search_box"
+    tools:context="com.melichallenge.ui.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSearchResultBack"
+        android:layout_width="@dimen/search_box_icon_back"
+        android:layout_height="@dimen/search_box_icon_back"
+        android:layout_marginStart="@dimen/margin_20"
+        android:src="@drawable/ic_arrow_short_left_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etTextQuery"
+        style="@style/EditTextAppearance.SearchBox"
+        android:layout_width="@dimen/height_width_0"
+        android:layout_height="@dimen/search_box_height"
+        android:layout_marginHorizontal="@dimen/margin_20"
+        android:hint="@string/search_box_hint"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/llActionIcons"
+        app:layout_constraintStart_toEndOf="@+id/ivSearchResultBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llActionIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClearInput"
+            android:layout_width="@dimen/search_box_icon"
+            android:layout_height="@dimen/search_box_icon"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:src="@drawable/ic_rounded_close_grey"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icSearchIcon"
+            android:layout_width="@dimen/search_box_icon"
+            android:layout_height="@dimen/search_box_icon"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:src="@drawable/ic_search"
+            android:paddingHorizontal="@dimen/padding_5"
+            android:paddingVertical="@dimen/padding_5"
+            android:visibility="visible"
+            tools:visibility="visible" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,5 @@
     <string name="error_corrupted_data">
         We have a problem getting this information, please try again later.
     </string>
+    <string name="search_box_hint">Find your item, searching here ...</string>
 </resources>
