@@ -14,4 +14,5 @@
 
     <!-- height Width -->
     <dimen name="height_width_0">0dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
 </resources>

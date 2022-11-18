@@ -3,15 +3,14 @@ package com.melichallenge.di
 import com.melichallenge.data.repositories.ItemsRepositoryImpl
 import com.melichallenge.domain.repositories.ItemsRepository
 import com.melichallenge.domain.usecases.SearchItemUseCase
-import com.melichallenge.domain.usecases.SearchItemsUseCase
+import com.melichallenge.domain.usecases.SearchResultUseCase
 import org.koin.dsl.module
-import org.koin.experimental.builder.singleBy
 
 val domainModule = module {
     // Repositories
-    singleBy<ItemsRepository, ItemsRepositoryImpl>()
+    single<ItemsRepository> { ItemsRepositoryImpl(get()) }
 
     // UseCases
-    single { SearchItemsUseCase(get()) }
+    single { SearchResultUseCase(get()) }
     single { SearchItemUseCase(get()) }
 }

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_search_box"
-    tools:context="com.melichallenge.ui.MainActivity">
+    tools:context="com.melichallenge.ui.SearchActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivSearchResultBack"
@@ -35,10 +35,10 @@
         android:id="@+id/llActionIcons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:orientation="horizontal">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivClearInput"
@@ -54,9 +54,9 @@
             android:layout_width="@dimen/search_box_icon"
             android:layout_height="@dimen/search_box_icon"
             android:layout_marginEnd="@dimen/margin_20"
-            android:src="@drawable/ic_search"
             android:paddingHorizontal="@dimen/padding_5"
             android:paddingVertical="@dimen/padding_5"
+            android:src="@drawable/ic_search"
             android:visibility="visible"
             tools:visibility="visible" />
     </androidx.appcompat.widget.LinearLayoutCompat>

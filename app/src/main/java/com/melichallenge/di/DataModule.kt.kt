@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit.SECONDS
 
 private const val TIME_OUT = 30L
 
-val dataModule = module(override = true) {
+val dataModule = module {
     // Client
     single {
         OkHttpClient
